@@ -31,6 +31,20 @@ function loadF() {
     xhttp.send();
 }
 
+function validar() {
+    let valor =$('#correo').val();
+    if(valor==""){
+        alert("llena el campo correo");
+        return;
+    }
+
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+     alert("La dirección de email " + valor + " es correcta.");
+     
+    } else {
+     $("#detalle").show();
+    }
+  }
 
 
 function loadI() {
