@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Arquitectura</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
@@ -22,10 +22,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a style="color:white; border-right: solid;" class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a onclick="loadI()" style="color:white; border-right: solid;" class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a  style="color:white; border-right: solid;" class="nav-link" href="#">Arquitectura</a>
+                <a onclick="loadA()" style="color:white; border-right: solid;" class="nav-link" href="#">Arquitectura</a>
               </li>
               <li class="nav-item">
                 <a style="color:white; border-right: solid;"class="nav-link" href="#">Tecnologia</a>
@@ -36,65 +36,108 @@
             </ul>
           </div>
       </nav>
-
-      <div style="margin-top: 10px;" class="container">
-        <div class="row">
-        <div class="card-group">
-            <div class="card">
-              <img src="img/ArquitecturasWebSpagetti.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">El Modelo cero y el código
-                    spaguetti</h5>
-                    <p style="text-align: justify;" class="card-text">Soluciones iniciales cliente/servidor en las que tenemos
-                        una página JSP/ASP/PHP que se conecta a una base de
-                        datos y genera un nuevo contenido html Es código
-                        spaguetti el que nadie quiere tener que pero que en su
-                        momento se usó mucho A día de hoy lo puedes
-                        encontrar en más sitios de los que se piensa Como
-                        ventaja fundamental destaca su sencillez a nivel de
-                        arquitectura y como desventaja su poca flexibilidad y nula
-                        capacidad de reutilización</p>
-        
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/ArquitecturasWebModelo1-2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">El Modelo 1</h5>
-                <p style="text-align: justify;" class="card-text">Este
-                    fue un salto importante promueve la modularización
-                    y el uso de componentes a través de la programación
-                    orientada a objeto Fue desde mi punto de vista un gran
-                    salto Hay enfoques tipo Rails que se apoyaron más en un
-                    patrón tipo Active Record y otros en Servicios y
-                    Repositorios como Spring La clave fundamental es
-                    generar componentes en la capa de backend y aumentar la
-                    reutilización de esa parte</p>
+    <div id="contenedor">
+        <div style="margin-top: 10px; margin-bottom: 20px;" class="container">
+            <div class="row">
+            <div class="card-group" >
+                <div class="card" >
+                  <img src="img/ArquitecturasWebSpagetti.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El Modelo cero y el código
+                        spaguetti</h5>
+                        <p style="text-align: justify;" class="card-text">Soluciones iniciales cliente/servidor en las que tenemos
+                            una página JSP/ASP/PHP que se conecta a una base de
+                            datos y genera un nuevo contenido html Es código
+                            spaguetti el que nadie quiere tener que pero que en su
+                            momento se usó mucho A día de hoy lo puedes
+                            encontrar en más sitios de los que se piensa Como
+                            ventaja fundamental destaca su sencillez a nivel de
+                            arquitectura y como desventaja su poca flexibilidad y nula
+                            capacidad de reutilización</p>
             
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/ArquitecturasWebModelo1-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El Modelo 1</h5>
+                    <p style="text-align: justify;" class="card-text">Este
+                        fue un salto importante promueve la modularización
+                        y el uso de componentes a través de la programación
+                        orientada a objeto Fue desde mi punto de vista un gran
+                        salto Hay enfoques tipo Rails que se apoyaron más en un
+                        patrón tipo Active Record y otros en Servicios y
+                        Repositorios como Spring La clave fundamental es
+                        generar componentes en la capa de backend y aumentar la
+                        reutilización de esa parte</p>
+                
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/ArquitecturasWebModelo2-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">El modelo 2 (MVC)</h5>
+                    <p style="text-align: justify;" class="card-text">Quizás
+                        para mucha gente el modelo más importante, se
+                        apuesta por la separación de responsabilidades entre
+                        Vista, Controlador y Modelo Prácticamente todos los
+                        frameworks web han implementado este enfoque de una
+                        forma u otra Ejemplos son Struts en Java ASP NET en
+                        Microsoft o Laravel en PHP</p>
+        
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img src="img/ArquitecturasWebModelo2-2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">El modelo 2 (MVC)</h5>
-                <p style="text-align: justify;" class="card-text">Quizás
-                    para mucha gente el modelo más importante, se
-                    apuesta por la separación de responsabilidades entre
-                    Vista, Controlador y Modelo Prácticamente todos los
-                    frameworks web han implementado este enfoque de una
-                    forma u otra Ejemplos son Struts en Java ASP NET en
-                    Microsoft o Laravel en PHP</p>
-    
-              </div>
             </div>
-          </div>
+    </div>
+      
+      </div>
+      <div style="border-top: solid; border-color:rgb(226, 43, 43);" class="row">
+        <div style="border-right: solid;border-left: solid; border-color:rgb(226, 43, 43);" class="col-sm-3">
+          <p style="color: black;">Enlaces Cursos</p>
+          <a style="display: block;" href="https://www.w3schools.com/">W3schools.com</a>
+          <a style="display: block;" href="https://www.tutorialspoint.com/index.htm">TutorialPoints</a>
         </div>
+        <div style="border-right: solid; border-color:rgb(226, 43, 43);"  class="col-sm-3">
+          <p style="color: black;" >Enlaces Entidades</p>
+          <a style="display: block;"href="https://www.w3.org/">W3C</a>
+          <a style="display: block;" href="https://www.ietf.org/">IETF</a>
+          <a href="https://www.internetsociety.org/">Internet</a>
+          <a style="display: block;" href="https://www.icann.org/es">Society</a>
+          <a style="display: block;" href="">ICANN</a>
+        </div>
+        <div style="border-right: solid;border-color:rgb(226, 43, 43);"  class="col-sm-3">
+        </div>
+        <div style="border-right: solid;border-color:rgb(226, 43, 43);"  class="col-sm-3">
+          <p>Contacto</p>
+          <ul>
+            <li>
+              Email: gabrielarturogq@ufps.edu.co
+            </li>
+            <li>
+              Cel313 445 6789
+            </li>
+          </ul>
         </div>
       </div>
+      
+    
+    
+          <!-- Footer -->
+            <footer style="background-color: rgb(226, 43, 43);"bclass="page-footer font-small blue row">
+            <!-- Copyright -->
+            <div style="color:white"class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="https://mdbootstrap.com/"> Desarrollado por GABRIEL GARCIA QUINTERO</a>
+            </div>
+            <!-- Copyright -->
+            </footer>
+          <!-- Footer -->
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script src="js/script.js"></script>
 
   </body>
 </html>
